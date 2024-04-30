@@ -1,0 +1,27 @@
+a {
+  font-weight: 700;
+  text-decoration-line: none;
+}
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav__link {
+  display: block;
+  color: black;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: orange;
+}
+
+.active {
+  color: orange;
+}

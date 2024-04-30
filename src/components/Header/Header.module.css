@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid black;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
