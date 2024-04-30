@@ -6,7 +6,7 @@ const Home = () => {
     <main>
       <Section>
         <Container>
-          <p>Welcome to the PhoneBook</p>
+          <p>Welcome to the Video lessons</p>
         </Container>
       </Section>
     </main>

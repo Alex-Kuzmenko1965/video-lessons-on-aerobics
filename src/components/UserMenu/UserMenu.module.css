@@ -4,6 +4,18 @@
   align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .user__menu__wrapper {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user__menu__wrapper {
+    gap: 30px;
+  }
+}
+
 .user__name {
   color: black;
   font-weight: 700;

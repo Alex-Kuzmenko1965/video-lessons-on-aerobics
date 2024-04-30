@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={cl.footer}>
       <Container>
-        <p className={cl.footer__text}>React PhoneBook</p>
+        <p className={cl.footer__text}>React Video lessons</p>
       </Container>
     </footer>
   );

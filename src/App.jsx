@@ -10,12 +10,12 @@ import SharedLayout from './components/SharedLayout/SharedLayout';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import Contacts from './pages/Contacts';
+import MyPreferences from './pages/MyPreferences';
 
 // const Home = lazy(() => import('./pages/Home'));
 // const Register = lazy(() => import('./pages/Register'));
 // const Login = lazy(() => import('./pages/Login'));
-// const Contacts = lazy(() => import('./pages/Contacts'));
+// const Contacts = lazy(() => import('./pages/MyPreferences'));
 
 export default function App() {
   const dispatch = useDispatch();
@@ -34,14 +34,14 @@ export default function App() {
         <Route
           path="/register"
           element={
-            // Обмежений маршрут на /contacts
+            // Обмежений маршрут на /MyPreferences
             <RestrictedRoute redirectTo="/contacts" component={<Register />} />
           }
         />
         <Route
           path="/login"
           element={
-            // Обмежений маршрут на /contacts
+            // Обмежений маршрут на /MyPreferences
             <RestrictedRoute redirectTo="/contacts" component={<Login />} />
           }
         />
@@ -49,7 +49,7 @@ export default function App() {
           path="/contacts"
           element={
             // Обмежений маршрут на /login
-            <PrivateRoute redirectTo="/login" component={<Contacts />} />
+            <PrivateRoute redirectTo="/login" component={<MyPreferences />} />
           }
         />
         <Route path="*" element={<Home />} />

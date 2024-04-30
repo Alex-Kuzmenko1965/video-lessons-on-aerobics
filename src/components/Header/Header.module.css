@@ -1,8 +1,10 @@
 .header {
+  width: 100%;
   border-bottom: 1px solid black;
 }
 
 .header__wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
