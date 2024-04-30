@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/video-lessons-on-aerobics/static/css/main.97f9bb4c.css",
+    "main.js": "/video-lessons-on-aerobics/static/js/main.a5df6c57.js",
+    "index.html": "/video-lessons-on-aerobics/index.html",
+    "main.97f9bb4c.css.map": "/video-lessons-on-aerobics/static/css/main.97f9bb4c.css.map",
+    "main.a5df6c57.js.map": "/video-lessons-on-aerobics/static/js/main.a5df6c57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97f9bb4c.css",
+    "static/js/main.a5df6c57.js"
+  ]
+}
