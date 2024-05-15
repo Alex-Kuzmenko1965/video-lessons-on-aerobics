@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/video-lessons-on-aerobics/static/css/main.1f3da93c.css",
-    "main.js": "/video-lessons-on-aerobics/static/js/main.f4868212.js",
+    "main.css": "/video-lessons-on-aerobics/static/css/main.4efbbf19.css",
+    "main.js": "/video-lessons-on-aerobics/static/js/main.35657242.js",
+    "static/media/not-found.jpg": "/video-lessons-on-aerobics/static/media/not-found.a573b6549d35f288d82d.jpg",
     "index.html": "/video-lessons-on-aerobics/index.html",
-    "main.1f3da93c.css.map": "/video-lessons-on-aerobics/static/css/main.1f3da93c.css.map",
-    "main.f4868212.js.map": "/video-lessons-on-aerobics/static/js/main.f4868212.js.map"
+    "main.4efbbf19.css.map": "/video-lessons-on-aerobics/static/css/main.4efbbf19.css.map",
+    "main.35657242.js.map": "/video-lessons-on-aerobics/static/js/main.35657242.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f3da93c.css",
-    "static/js/main.f4868212.js"
+    "static/css/main.4efbbf19.css",
+    "static/js/main.35657242.js"
   ]
 }
