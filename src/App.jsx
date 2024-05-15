@@ -8,14 +8,18 @@ import { PrivateRoute } from 'PrivateRoute';
 import { RestrictedRoute } from 'RestrictedRoute';
 import SharedLayout from './components/SharedLayout/SharedLayout';
 import Home from './pages/Home';
+// import Movies from './pages/Movies';
+import MoviesDetails from './pages/MovieDetails';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import MyPreferences from './pages/MyPreferences';
+import MyLessons from './pages/MyLessons';
 
 // const Home = lazy(() => import('./pages/Home'));
+// const Movies = lazy(() => import('./pages/Movies'));
 // const Register = lazy(() => import('./pages/Register'));
 // const Login = lazy(() => import('./pages/Login'));
-// const Contacts = lazy(() => import('./pages/MyPreferences'));
+// const MyLessons = lazy(() => import('./pages/MyLessons'));
+// const MoviesDetails = lazy(() => import('./pages/MovieDetails'));
 
 export default function App() {
   const dispatch = useDispatch();
@@ -31,17 +35,18 @@ export default function App() {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
+        <Route path="movies/:movieId" element={<MoviesDetails />} />
         <Route
           path="/register"
           element={
-            // Обмежений маршрут на /MyPreferences
+            // Обмежений маршрут на /MyLessons
             <RestrictedRoute redirectTo="/contacts" component={<Register />} />
           }
         />
         <Route
           path="/login"
           element={
-            // Обмежений маршрут на /MyPreferences
+            // Обмежений маршрут на /MyLessons
             <RestrictedRoute redirectTo="/contacts" component={<Login />} />
           }
         />
@@ -49,11 +54,11 @@ export default function App() {
           path="/contacts"
           element={
             // Обмежений маршрут на /login
-            <PrivateRoute redirectTo="/login" component={<MyPreferences />} />
+              <PrivateRoute redirectTo="/login" component={<MyLessons />} />
           }
-        />
+          />          
         <Route path="*" element={<Home />} />
-      </Route>
+        </Route>
     </Routes>
   );
 }

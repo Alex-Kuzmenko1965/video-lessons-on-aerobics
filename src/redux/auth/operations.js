@@ -34,6 +34,7 @@ export const logIn = createAsyncThunk('auth/login', async (userData, { rejectWit
     const { data } = await axios.post('/users/login', userData);
     // Після успішного входу додаємо token до HTTP-заголовка
     setToken(data.token);
+    console.log(data);
     return data;
   } catch (error) {
     return rejectWithValue(error.message);
@@ -66,6 +67,7 @@ export const fetchCurrentUser = createAsyncThunk(
     setToken(persistedToken);
     try {
       const { data } = await axios.get('/users/current');
+      console.log('persistedToken:', persistedToken);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
