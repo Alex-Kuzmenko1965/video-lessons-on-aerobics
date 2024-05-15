@@ -22,22 +22,17 @@ const MovieInform = ({
             Back
           </Link>
       <div className={css['information-wrapper']}>
-      <iframe
-		class="about-vid"
-      width="180"
-      height="320"
-      src={proba}
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-      {/* <img
-        src={posterPath ? posterPath : noFound}
-        alt="Movie`s poster"
-        width="200"
-      ></img> */}
-      <div className={css['text-wrapper']}>
+        <iframe
+          class="about-vid"
+          width="180"
+          height="320"
+          src={proba}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen >
+        </iframe>
+        <div className={css['text-wrapper']}>
         <div className={css['btn-wrapper']}>          
           <h1 className={css['section-main-title']}>{title}</h1>{' '}
         </div>
