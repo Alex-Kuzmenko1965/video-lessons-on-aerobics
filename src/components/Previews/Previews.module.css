@@ -1,0 +1,19 @@
+.reviews_author {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.reviews_text {
+  text-align: justify;
+}
+
+.reviews_list_item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.not_found {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}

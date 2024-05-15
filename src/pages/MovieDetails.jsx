@@ -64,21 +64,31 @@ const MoviesDetails = () => {
           ></MovieInform>
           <ul className={cl.navLink_list}>
             <li>
+              {/* <iframe
+		class="about-vid"
+      width="224"
+      height="199"
+      src="https://www.youtube.com/embed/8WEMZ86Eho8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe> */}
               <NavLink
                 state={location.state}
                 className={navLinkClassName}
-                to="cast"
-              >
-                Cast
+                to="reviews"
+              >{console.log(location.state)}
+                Previews
               </NavLink>
             </li>
             <li>
               <NavLink
                 state={location.state}
                 className={navLinkClassName}
-                to="reviews"
-              >
-                Reviews
+                to="cast"
+              >{console.log(location.state)}
+                Purchase
               </NavLink>
             </li>
           </ul>

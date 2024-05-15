@@ -9,10 +9,12 @@ import { RestrictedRoute } from 'RestrictedRoute';
 import SharedLayout from './components/SharedLayout/SharedLayout';
 import Home from './pages/Home';
 // import Movies from './pages/Movies';
-import MoviesDetails from './pages/MovieDetails';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import MyLessons from './pages/MyLessons';
+import MoviesDetails from './pages/MovieDetails';
+import Cast from './components/Cast/Cast';
+import Previews from './components/Previews/Previews';
 
 // const Home = lazy(() => import('./pages/Home'));
 // const Movies = lazy(() => import('./pages/Movies'));
@@ -35,7 +37,13 @@ export default function App() {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
-        <Route path="movies/:movieId" element={<MoviesDetails />} />
+          <Route path="movies/:movieId" element=
+                     {<MoviesDetails />}>
+            <Route path="reviews" element={<Previews />} />
+            <Route path="cast" element={<Cast />} />
+            {/* Можна і так */}
+            {/* <Route path="reviews" compoment={Reviews} /> */}
+          </Route>
         <Route
           path="/register"
           element={
