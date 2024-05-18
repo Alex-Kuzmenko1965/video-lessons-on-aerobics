@@ -1,8 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import css from './MovieInform.module.css';
-// import noFound from '../../assets/not-found.jpg';
-import proba from '../../assets/video/proba.mp4';
+// import proba from '../../assets/video/proba.mp4';
+import noFound from '../../assets/not-found.jpg'
 
 const MovieInform = ({
   posterPath,
@@ -22,16 +22,24 @@ const MovieInform = ({
             Back
           </Link>
       <div className={css['information-wrapper']}>
-        <iframe
+        <img
+        src={posterPath ? posterPath : noFound}
+        alt="Movie`s poster"
+        width="200"
+      ></img>
+        {/* <iframe
           class="about-vid"
           width="180"
           height="320"
           src={proba}
+          // width="224"
+          // height="199"
+          // src="https://www.youtube.com/embed/8WEMZ86Eho8"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen >
-        </iframe>
+        </iframe> */}
         <div className={css['text-wrapper']}>
         <div className={css['btn-wrapper']}>          
           <h1 className={css['section-main-title']}>{title}</h1>{' '}

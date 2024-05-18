@@ -3,10 +3,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations';
 import { selectContacts } from '../../redux/contacts/selectors';
 
-export const ContactForm = () => {  
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
-  // console.log(name, number);
+export const ContactForm = ({title, id}) => {
+  const [name, setName] = useState(title);
+  const [number, setNumber] = useState(id);
+  console.log(name, number);
 
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
@@ -37,7 +37,7 @@ export const ContactForm = () => {
       return;
     }
     dispatch(addContact({name, number}));
-    reset();       
+    reset();
   };  
 
   const reset = () => {

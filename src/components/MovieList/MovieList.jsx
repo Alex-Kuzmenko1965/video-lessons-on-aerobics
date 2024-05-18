@@ -10,6 +10,7 @@ const MoviesList = ({ movies }) => {
     <ul className={css['movies-list']}>
       {movies.map( ({ id, title }) => (
         <li className={css['movies-list-item']} key={id}>
+          {console.log({ id, title })}
           <Link
             className={css['movies-list-link']}
             to={`/movies/${id}`}

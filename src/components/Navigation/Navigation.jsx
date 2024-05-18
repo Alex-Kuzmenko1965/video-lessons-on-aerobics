@@ -11,7 +11,7 @@ const Navigation = () => {
     <nav className={cl.nav}>
       <NavLink className={navLinkClassName} to="/">
         Home
-      </NavLink>
+      </NavLink>      
       {isLoggedIn && (
         <NavLink className={navLinkClassName} to="/contacts">
           My Lessons

@@ -6,6 +6,7 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import MoviesList from '../components/MovieList/MovieList';
 import { getSearchMovies } from '../services/MovieAPI';
 
+
 const Movies = () => {
   const styles = {
     marginTop: '20px',
@@ -37,6 +38,7 @@ const Movies = () => {
     <main>
       <Section>
         <Container>
+          <h1>Search lesson</h1>
           <SearchBar></SearchBar>
           {searchMovies && searchMovies.length > 0 ? (
             <MoviesList movies={searchMovies} />
@@ -44,7 +46,7 @@ const Movies = () => {
             <p style={styles}>Not found any movies</p>
           ) : (
             ''
-          )}
+          )}          
         </Container>
       </Section>
     </main>

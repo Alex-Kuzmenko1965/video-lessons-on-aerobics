@@ -2,19 +2,17 @@ import { useEffect } from 'react';
 // import { lazy } from 'react';
 import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
-import { UseAuth } from './components/hooks/useAuth';
-import { fetchCurrentUser } from './redux/auth/operations';
+import { UseAuth } from 'components/hooks/useAuth';
+import { fetchCurrentUser } from 'redux/auth/operations';
 import { PrivateRoute } from 'PrivateRoute';
 import { RestrictedRoute } from 'RestrictedRoute';
-import SharedLayout from './components/SharedLayout/SharedLayout';
-import Home from './pages/Home';
+import SharedLayout from 'components/SharedLayout/SharedLayout';
+import Home from 'pages/Home';
 // import Movies from './pages/Movies';
-import Register from './pages/Register';
-import Login from './pages/Login';
-import MyLessons from './pages/MyLessons';
-import MoviesDetails from './pages/MovieDetails';
-import Cast from './components/Cast/Cast';
-import Previews from './components/Previews/Previews';
+import Register from 'pages/Register';
+import Login from 'pages/Login';
+import MyLessons from 'pages/MyLessons';
+import MoviesDetails from 'pages/MovieDetails';
 
 // const Home = lazy(() => import('./pages/Home'));
 // const Movies = lazy(() => import('./pages/Movies'));
@@ -35,15 +33,10 @@ export default function App() {
     <b>Refreshing user...</b>
   ) : (
     <Routes>
-      <Route path="/" element={<SharedLayout />}>
-        <Route index element={<Home />} />
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
           <Route path="movies/:movieId" element=
-                     {<MoviesDetails />}>
-            <Route path="reviews" element={<Previews />} />
-            <Route path="cast" element={<Cast />} />
-            {/* Можна і так */}
-            {/* <Route path="reviews" compoment={Reviews} /> */}
-          </Route>
+            {<MoviesDetails />} />          
         <Route
           path="/register"
           element={
@@ -64,7 +57,7 @@ export default function App() {
             // Обмежений маршрут на /login
               <PrivateRoute redirectTo="/login" component={<MyLessons />} />
           }
-          />          
+          />
         <Route path="*" element={<Home />} />
         </Route>
     </Routes>

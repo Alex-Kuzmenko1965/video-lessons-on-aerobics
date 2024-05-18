@@ -36,6 +36,7 @@ async function getMovieCasts(movieId) {
     const { data } = await axios.get(
       `${BASE_URL}/movie/${movieId}/credits?api_key=${API_KEY}`
     );
+    console.log(data);
     return data;
   } catch (error) {
     console.error(error);
@@ -47,6 +48,7 @@ async function getMovieReviews(movieId) {
     const { data } = await axios.get(
       `${BASE_URL}/movie/${movieId}/reviews?api_key=${API_KEY}`
     );
+    console.log(data);
     return data;
   } catch (error) {
     console.error(error);

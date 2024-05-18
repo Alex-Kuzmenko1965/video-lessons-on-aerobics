@@ -26,8 +26,8 @@ const Home = () => {
     <main>
       <Section>
         <Container>
-          <h1>Welcome to the Video lessons</h1>
-          <MoviesList movies={trendingMovies} />          
+          <h2>Welcome to the Video lessons</h2>
+          <MoviesList movies={trendingMovies} />
         </Container>
       </Section>
     </main>

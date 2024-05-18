@@ -1,7 +1,6 @@
 // import { useSelector } from 'react-redux'
 import Section from '../components/Section/Section';
 import Container from '../components/Container/Container';
-import { ContactForm } from '../components/ContactForm/ContactForm';
 // import { Filter } from '../components/Filter/Filter';
 import { ContactList } from '../components/ContactList/ContactList';
 // import { selectIsLoading, selectError } from '../redux/contacts/selectors';
@@ -13,10 +12,7 @@ const Contacts = () => {
   return (
     <main>
       <Container>
-        <Section title="Phonebook">
-          <ContactForm />
-        </Section>
-        <Section title="Contacts">
+        <Section title="My Lessons">
           {/* <Filter />
           {isLoading && !error && <b>Request in progress...</b>} */}
           <ContactList />
