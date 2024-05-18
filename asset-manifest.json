@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/video-lessons-on-aerobics/static/css/main.53ebe799.css",
-    "main.js": "/video-lessons-on-aerobics/static/js/main.6a158f7e.js",
-    "static/media/proba.mp4": "/video-lessons-on-aerobics/static/media/proba.ff94729cca8e8c166e65.mp4",
+    "main.css": "/video-lessons-on-aerobics/static/css/main.4efbbf19.css",
+    "main.js": "/video-lessons-on-aerobics/static/js/main.aa7bb7b3.js",
     "static/media/not-found.jpg": "/video-lessons-on-aerobics/static/media/not-found.a573b6549d35f288d82d.jpg",
     "index.html": "/video-lessons-on-aerobics/index.html",
-    "main.53ebe799.css.map": "/video-lessons-on-aerobics/static/css/main.53ebe799.css.map",
-    "main.6a158f7e.js.map": "/video-lessons-on-aerobics/static/js/main.6a158f7e.js.map"
+    "main.4efbbf19.css.map": "/video-lessons-on-aerobics/static/css/main.4efbbf19.css.map",
+    "main.aa7bb7b3.js.map": "/video-lessons-on-aerobics/static/js/main.aa7bb7b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.53ebe799.css",
-    "static/js/main.6a158f7e.js"
+    "static/css/main.4efbbf19.css",
+    "static/js/main.aa7bb7b3.js"
   ]
 }
